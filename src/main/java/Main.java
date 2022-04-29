@@ -5,7 +5,13 @@ public class Main {
     long amount = 1000_60;
     boolean registered = true;
 
-    service.calculate(amount, registered);
+    long factResult = service.calculate(amount, registered);
+
+    int expected = 30;
+    if (factResult == expected) {
+      System.out.println("Проверка успешна!");
+    }
   }
+
 }
 
